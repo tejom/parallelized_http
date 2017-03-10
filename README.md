@@ -5,13 +5,16 @@ Small wrapper around http requests to use the range header to parallelize http r
 Example:
 
 ```javascript
-p_http.get("www.google.com","/",2,300,{}, (res) => {
-	console.log(res.res.statusCode)
-	console.log(res.body.toString());
-});
+/* host, path, number of requests , byte size [,options] */
 
+p_http.get("www.google.com","/",2,300,{})
+	.then( (res) => {
+		console.log(res);
+		console.log(res.body.toString());
+	})
+	.catch( (err) => {
+		console.error(err);
+	});
 ```
-
-get()'s callback will pass an object {res,body}.
 res contains the last requests response object from node
 body contains the joined body
