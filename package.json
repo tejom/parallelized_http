@@ -1,6 +1,6 @@
 {
   "name": "parallelized_http",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "parallelize http requests using HTTP range header",
   "main": "index.js",
   "scripts": {
