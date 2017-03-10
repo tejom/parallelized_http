@@ -1,6 +1,6 @@
 {
   "name": "parallelized_http",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "parallelize http requests using HTTP range header",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,8 @@
   },
   "author": "Matthew Tejo",
   "license": "ISC",
-  "repository" : {
-  	"type" : "git",
-  	"url" : "https://github.com/tejom/parallelized_http"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tejom/parallelized_http"
   }
-
 }
